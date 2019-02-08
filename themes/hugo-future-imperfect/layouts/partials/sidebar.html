@@ -74,10 +74,10 @@
 
   <!-- This if statement only applies if someone goes to the /categories url -->
   <!-- Otherwise this section is shown for all other links -->
-  {{ if .Site.Params.showSidebarCategories  }}
-  {{ if ne ($.Scratch.Get "showCategories") false }}
+  <!-- {{ if .Site.Params.showSidebarCategories  }}
+  {{ if ne ($.Scratch.Get "showCategories") false }} -->
   <!-- Categories List -->
-    <section id="categories">
+    <!-- <section id="categories">
       <header>
         <h3>
           <a href="/categories/">Categories</a>
@@ -106,14 +106,14 @@
         {{ end }}
     </section>
   {{ end }}
-  {{ end }}
+  {{ end }} -->
 
   <!-- About -->
   {{ with .Site.Params.intro.about }}
     <section id="mini-bio">
-      <h3>About</h3>
+      <h3>Tony's Story</h3>
       <p>{{ . | safeHTML }}</p>
-      <a href="/about/" class="button">Learn More</a>
+      <a href="#" class="button">Read Full Story</a>
     </section>
   {{ end }}
 
@@ -137,8 +137,9 @@
         {{ else }}
           {{ .Site.Title }}
         {{ end }}
-      {{end}}.
-      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+      {{end}}.<br>
+      a 501(c)(3) tax exempt non-profit charitable foundation
+      <!-- Powered by <a href="//gohugo.io" target="_blank">Hugo</a> -->
     </p>
   </section>
 </section>

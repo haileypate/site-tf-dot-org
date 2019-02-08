@@ -5,7 +5,7 @@ featured_image: 'https://ucarecdn.com/94ae8e00-19d5-4957-8e94-6fabfb5c42cd/'
 post_summary: >-
   A cancer diagnosis turns a family’s world upside down. That's why we're doing
   this.
-layout: posts/content-list
+layout: posts/content-single
 ---
 A cancer diagnosis turns a family’s world upside down. While the shock of such news is still fresh, life and its obligations continue – sometimes with mounting medical bills and other financial stresses. This is especially critical when the person who is diagnosed with cancer happens to be the financial provider for the family, and their medical condition is serious enough that they are no longer able to work.
 
