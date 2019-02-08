@@ -11,36 +11,48 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "posts" # Used in the UI
+    label: "post" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}{{month}}{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Banner Image", name: "banner", widget: "image"}
+      - {label: "Publish date", name: "date", widget: "datetime"}
+      - {label: "Banner image", name: "banner", widget: "image"}
       - {label: "Post content", name: "body", widget: "markdown"}
       - {label: "Front page summary", name: "post_summary", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "string"}
+
+  - name: "events" # Used in routes, e.g., /admin/collections/blog
+    label: "event" # Used in the UI
+    folder: "content/events" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}{{month}}{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Event title", name: "title", widget: "string"}
+      - {label: "Publish date", name: "date", widget: "datetime"}
+      - {label: "Featured image", name: "thumbnail", widget: "image"}
+      - {label: "Event date", name: "date", widget: "datetime"}
+      - {label: "Event details", name: "body", widget: "markdown"}
       
   - name: "people" # Used in routes, e.g., /admin/collections/blog
-    label: "people" # Used in the UI
+    label: "person" # Used in the UI
     folder: "content/people" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}{{month}}{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Publish date", name: "date", widget: "datetime"}
+      - {label: "Featured image", name: "thumbnail", widget: "image"}
       - {label: "Post content", name: "body", widget: "markdown"}
 
   - name: "organizations" # Used in routes, e.g., /admin/collections/blog
-    label: "organizations" # Used in the UI
+    label: "organization" # Used in the UI
     folder: "content/organizations" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}{{month}}{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Publish date", name: "date", widget: "datetime"}
+      - {label: "Featured image", name: "thumbnail", widget: "image"}
       - {label: "Post content", name: "body", widget: "markdown"}
