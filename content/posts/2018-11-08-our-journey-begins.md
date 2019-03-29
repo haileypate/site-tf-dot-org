@@ -1,7 +1,8 @@
 ---
 title: Our Journey Begins
 date: '2018-11-08'
-featured: 'https://ucarecdn.com/94ae8e00-19d5-4957-8e94-6fabfb5c42cd/'
+featured: 'scott-and-tony-dark.jpg'
+path: ''
 post_summary: >-
   A cancer diagnosis turns a family’s world upside down. That's why we're doing
   this.
